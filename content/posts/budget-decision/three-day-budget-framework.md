@@ -40,4 +40,4 @@ NT$900/天 × 7 天 = NT$6,300 是一個最小測試週期。建議：
 - 第四天評估是否調整素材或受眾
 - 第七天做完整 ROAS 評估，決定下一週期是擴量 / 持平 / 停止
 
-預算決策的基礎是讀懂 ROAS——可以參考[ROAS 基準對照：台灣微型電商廣告成效的起點](/posts/data-diagnosis/roas-baseline/)確認你的損益平衡 ROAS 計算是否正確。
+預算決策的基礎是讀懂 ROAS——可以參考[ROAS 基準對照：台灣微型電商廣告成效的起點](/posts/data-diagnosis/roas-baseline/)確認你的損益平衡 ROAS 計算是否正確。如果你剛開始投放、數字還在波動，可以先了解[廣告學習期的機制和台灣小商家的實際觀察](/posts/budget-decision/learning-phase-guide/)，確認你看到的波動是學習期正常現象還是真的需要行動。
