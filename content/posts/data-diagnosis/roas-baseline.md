@@ -36,4 +36,4 @@ ROAS 低不一定要立刻停廣告。先確認三件事：
 
 確認完這三件事，才決定是停、調還是繼續等數據穩定。
 
-看完 ROAS 基準後，如果你在判斷某支廣告素材是否值得繼續跑，可以參考[高曝光低點擊：素材沒效的第一個診斷步驟](/posts/material-analysis/high-impression-low-ctr/)。
+看完 ROAS 基準後，如果你在判斷某支廣告素材是否值得繼續跑，可以參考[高曝光低點擊：素材沒效的第一個診斷步驟](/posts/material-analysis/high-impression-low-ctr/)。如果你還在適應報表上的各種指標，[TikTok 廣告後台七個數字的白話解讀](/posts/data-diagnosis/report-seven-metrics-guide/)有完整的逐欄說明。
