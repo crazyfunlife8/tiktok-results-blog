@@ -23,8 +23,8 @@ jobs:
 
       - name: Deploy to Cloudflare Pages
         run: |
-          npx wrangler@3 pages project create tiktok-analytics-blog --production-branch=main 2>/dev/null || true
-          npx wrangler@3 pages deploy public --project-name=tiktok-analytics-blog --branch=main
+          npx wrangler@3 pages project create tiktok-results-blog --production-branch=main 2>/dev/null || true
+          npx wrangler@3 pages deploy public --project-name=tiktok-results-blog --branch=main
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
