@@ -1,0 +1,53 @@
+{{/* partials/header.html — C站 跳動e成效 共用 header + 漢堡選單
+     RWD: 桌面 = 水平 nav; 手機 = 漢堡選單 (JS toggle、無 @keyframes)
+     Gate 9：375 / 768 / 1440 三斷點 */}}
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="{{ .Site.BaseURL }}" class="site-header__brand">
+      <div class="site-header__logo-mark">
+        <span>R</span>
+      </div>
+      <div class="site-header__brand-text">
+        <span class="site-header__brand-name">跳動e成效</span>
+        <span class="site-header__brand-sub">TikTok 廣告成效診斷</span>
+      </div>
+    </a>
+
+    {{/* 桌面主導覽 */}}
+    <nav class="site-nav" aria-label="主導覽">
+      {{ range .Site.Menus.main }}
+        {{ $active := or ($.IsHome | and (eq .URL "/")) (strings.HasPrefix $.RelPermalink .URL) }}
+        <a href="{{ .URL }}"
+           class="site-nav__link{{ if $active }} site-nav__link--active{{ end }}">
+          {{ .Name }}
+        </a>
+      {{ end }}
+    </nav>
+
+    {{/* 漢堡按鈕（手機） */}}
+    <button class="hamburger"
+            id="hamburger-btn"
+            aria-label="開啟選單"
+            aria-expanded="false"
+            aria-controls="mobile-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  {{/* 手機展開選單 */}}
+  <nav class="mobile-nav" id="mobile-nav" aria-label="手機主導覽" hidden>
+    {{ range .Site.Menus.main }}
+      {{ $active := or ($.IsHome | and (eq .URL "/")) (strings.HasPrefix $.RelPermalink .URL) }}
+      <a href="{{ .URL }}"
+         class="mobile-nav__item{{ if $active }} mobile-nav__item--active{{ end }}">
+        {{ .Name }}
+        <span class="mobile-nav__chevron">›</span>
+      </a>
+    {{ end }}
+    <a href="{{ .Site.Params.ctaURL }}" class="mobile-nav__cta">
+      {{ .Site.Params.ctaText }}
+    </a>
+  </nav>
+</header>

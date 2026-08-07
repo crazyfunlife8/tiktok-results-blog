@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{/* 404.html — C站 404 頁 */}}
+<div class="error-page">
+  <div class="error-page__inner">
+    <p class="error-page__code">404</p>
+    <h1 class="error-page__title">找不到這個頁面</h1>
+    <p class="error-page__desc">這個 URL 不存在，可能是連結已移動或輸入錯誤。</p>
+    <a href="{{ .Site.BaseURL }}" class="error-page__link">回到首頁</a>
+  </div>
+</div>
+{{ end }}

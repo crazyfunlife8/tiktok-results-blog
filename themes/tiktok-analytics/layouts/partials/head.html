@@ -1,0 +1,98 @@
+{{/* partials/head.html — C站 跳動e成效 SEO meta baseline (stage-03 §三 Gate 6)
+     OG / Twitter Card / canonical / JSON-LD / favicon / fonts
+     Latin fonts (Source Serif 4 + IBM Plex Sans + IBM Plex Mono): sync stylesheet
+       → §十一·十 紀律：Latin only → sync stylesheet（非 CJK preload+onload swap）
+       → 設計規格書 §四·一：無 CJK 字體家族載入，天然符合 Latin 站規範
+     main.css: sync stylesheet (§十一·八 紀律、防 below-fold CLS)
+     cache busting: ?v={{ now.Unix }} (§十一·五 紀律) */}}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{/* Hero image preload — LCP optimization (§十一·七) */}}
+{{ partial "hero-preload.html" . }}
+
+{{/* ── Google Fonts: Latin only → sync stylesheet (§十一·十 Latin 站紀律) ── */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap">
+
+{{/* ── Critical CSS inline (above-fold: header + hero — §十一·八) ── */}}
+<style>
+:root{--color-navy:#1B3A6B;--color-navy-light:#2C5282;--color-slate:#4A5568;--color-bg:#FFFFFF;--color-bg-tint:#F7F9FC;--color-text:#1A1A2E;--color-text-muted:#6B7280;--color-border:#E2E8F0;--color-accent-bar:#E63946;--color-accent-ok:#2D6A4F;--font-serif:'Source Serif 4',Georgia,serif;--font-sans:'IBM Plex Sans',system-ui,sans-serif;--font-mono:'IBM Plex Mono','Courier New',monospace;--max-content:720px;--max-site:1100px;--line-body:1.75;--line-heading:1.2}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:var(--font-sans);background:var(--color-bg);color:var(--color-text);line-height:var(--line-body)}
+a{color:var(--color-navy);text-decoration:none}
+a:hover{color:var(--color-navy-light);text-decoration:underline;text-decoration-color:var(--color-navy-light)}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--font-serif);font-weight:600;line-height:var(--line-heading);color:var(--color-text)}
+h1{font-size:clamp(1.75rem,4vw,2.5rem)}
+h2{font-size:clamp(1.25rem,3vw,1.75rem)}
+h3{font-size:1.125rem}
+.site-header{border-bottom:3px solid var(--color-navy);background:var(--color-bg);position:sticky;top:0;z-index:100}
+.site-header__inner{max-width:var(--max-site);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:60px}
+.site-header__brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.site-header__logo-mark{width:36px;height:36px;background:var(--color-navy);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.site-header__logo-mark span{font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:18px;color:#fff;letter-spacing:-0.5px}
+.site-header__brand-text{display:flex;flex-direction:column;line-height:1.15}
+.site-header__brand-name{font-family:var(--font-sans);font-weight:600;font-size:0.9375rem;color:var(--color-text)}
+.site-header__brand-sub{font-family:var(--font-sans);font-size:0.6875rem;color:var(--color-text-muted);letter-spacing:0.04em;text-transform:uppercase}
+.site-nav{display:flex;align-items:center;gap:4px}
+.site-nav__link{font-family:var(--font-sans);font-size:0.875rem;font-weight:600;color:var(--color-text-muted);padding:6px 12px;border-radius:4px;text-decoration:none;transition:color 0.2s ease-out,background 0.2s ease-out}
+.site-nav__link:hover{color:var(--color-navy);background:var(--color-bg-tint);text-decoration:none}
+.site-nav__link--active{color:var(--color-navy)}
+.hamburger{display:none}
+@media(max-width:767px){.site-nav{display:none}.hamburger{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:36px;height:36px;background:none;border:none;cursor:pointer;padding:4px}.hamburger span{display:block;width:22px;height:2px;background:var(--color-text);border-radius:1px;transition:transform 0.2s ease-out,opacity 0.2s ease-out}}
+</style>
+
+{{/* ── main.css sync stylesheet (§十一·八 sync 紀律、防 CLS) ── */}}
+<link rel="stylesheet" href="{{ "/css/main.css" | absURL }}?v={{ now.Unix }}">
+
+{{/* ── Page title ── */}}
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+
+{{/* ── Meta description ── */}}
+{{ $desc := .Description | default .Site.Params.description }}
+<meta name="description" content="{{ $desc }}">
+
+{{/* ── Robots ── */}}
+<meta name="robots" content="index, follow">
+
+{{/* ── Canonical ── */}}
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{/* ── OG image resolve (§十一·一 partial 集中、§十) ── */}}
+{{ $ogImage := partial "og-image-resolve.html" . }}
+{{ if not $ogImage }}
+  {{ $ogImage = "/og-default.jpg" | absURL }}
+{{ end }}
+
+{{/* ── Open Graph ── */}}
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:image" content="{{ $ogImage }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_TW">
+{{ if .IsPage }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+{{ end }}
+
+{{/* ── Twitter Card ── */}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta name="twitter:description" content="{{ $desc }}">
+<meta name="twitter:image" content="{{ $ogImage }}">
+
+{{/* ── Favicon 4 link tags (§十一·九 Gate 10) ── */}}
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+{{/* ── Structured data (schema) ── */}}
+{{ partial "schema.html" . }}

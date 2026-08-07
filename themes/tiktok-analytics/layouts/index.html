@@ -1,0 +1,144 @@
+{{ define "main" }}
+{{/* index.html — C站 首頁 (View A mockup)
+     2 欄 hero grid（主文案 + 側欄指標快覽）
+     3 欄分類卡片
+     近期操盤紀錄列表 */}}
+
+{{/* Featured article = 最新一篇 */}}
+{{ $allPosts := where .Site.RegularPages "Section" "posts" }}
+{{ $featured := index ($allPosts.ByDate.Reverse) 0 }}
+
+{{/* OG image for featured (listing context — §十 page bundle aware) */}}
+{{ $featImgURL := "" }}
+{{ with $featured }}
+  {{ $featPage := . }}
+  {{ with $featPage.Params.image }}
+    {{ $imgRef := . }}
+    {{ with $featPage.Resources.GetMatch $imgRef }}
+      {{ $featImgURL = .RelPermalink }}
+    {{ else }}
+      {{ $featImgURL = $imgRef | absURL }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<!-- HOME HERO (section 1 of 4) -->
+<section class="home-hero">
+  <div class="home-hero__inner">
+    <div class="home-hero__main">
+      <p class="home-hero__label">最新操盤紀錄</p>
+      <h1 class="home-hero__title">TikTok 廣告成效診斷——<br>從數字找出斷在哪</h1>
+      <p class="home-hero__deck">
+        每篇文章以真實後台數據為素材，拆解 ROAS、CTR、素材表現的判斷邏輯。
+        不說「廣告是藝術」，只說數字說什麼就做什麼。
+      </p>
+
+      {{ with $featured }}
+      <!-- Featured article -->
+      <p class="home-hero__featured-label">本週精選</p>
+      <h2 class="home-hero__article-title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+      <p class="home-hero__article-deck">{{ .Description }}</p>
+      <div class="home-hero__article-meta">
+        {{ if not .Date.IsZero }}<span>{{ .Date.Format "2006-01-02" }}</span>{{ end }}
+        {{ with .Params.readtime }}<span>閱讀時間 約 {{ . }} 分鐘</span>{{ end }}
+        {{ with .Section }}
+          {{ $catMap := dict "data-diagnosis" "指標診斷" "material-analysis" "素材分析" "budget-decision" "預算決策" }}
+          {{ with index $catMap (path.Base (strings.TrimPrefix "/posts/" $)) }}
+            <span class="meta-tag">{{ . }}</span>
+          {{ end }}
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+
+    <!-- Sidebar：指標快覽 -->
+    <aside class="home-hero__sidebar">
+      <p class="home-hero__sidebar-label">台灣電商廣告基準（2026 Q3）</p>
+      <div class="kpi-quick">
+        <div class="kpi-quick__item">
+          <span class="kpi-quick__name">ROAS 及格線</span>
+          <div>
+            <span class="kpi-quick__val kpi-quick__val--neutral">≥ 1.5</span><br>
+            <span class="kpi-quick__note">低於 1.0 = 虧損</span>
+          </div>
+        </div>
+        <div class="kpi-quick__item">
+          <span class="kpi-quick__name">TikTok CTR 均值</span>
+          <div>
+            <span class="kpi-quick__val kpi-quick__val--ok">0.8–1.2%</span><br>
+            <span class="kpi-quick__note">低於 0.5% = 素材問題</span>
+          </div>
+        </div>
+        <div class="kpi-quick__item">
+          <span class="kpi-quick__name">CPC（台灣均值）</span>
+          <div>
+            <span class="kpi-quick__val kpi-quick__val--neutral">NT$8–18</span><br>
+            <span class="kpi-quick__note">依垂直市場浮動</span>
+          </div>
+        </div>
+        <div class="kpi-quick__item">
+          <span class="kpi-quick__name">高曝光低點擊</span>
+          <div>
+            <span class="kpi-quick__val kpi-quick__val--bad">素材問題</span><br>
+            <span class="kpi-quick__note">先換素材再調受眾</span>
+          </div>
+        </div>
+      </div>
+      <p class="kpi-quick__source">數據來源：自有後台投放紀錄 + 台灣廣告主回報（2026 Q2–Q3）</p>
+    </aside>
+  </div>
+</section>
+
+<!-- HOME CATEGORIES (section 2 of 4) -->
+<section class="home-categories">
+  <div class="home-categories__inner">
+    <p class="home-categories__heading">三大診斷分類</p>
+    <div class="home-categories__grid">
+      <a href="/posts/data-diagnosis/" class="cat-card">
+        <p class="cat-card__number">01 /</p>
+        <h3 class="cat-card__title">指標診斷</h3>
+        <p class="cat-card__desc">ROAS / CTR / CPC 基準對照，後台數據白話說明，報表判讀流程</p>
+      </a>
+      <a href="/posts/material-analysis/" class="cat-card">
+        <p class="cat-card__number">02 /</p>
+        <h3 class="cat-card__title">素材分析</h3>
+        <p class="cat-card__desc">從數據判斷哪支影片沒效，高曝光低點擊 vs 高點擊低轉換的診斷邏輯</p>
+      </a>
+      <a href="/posts/budget-decision/" class="cat-card">
+        <p class="cat-card__number">03 /</p>
+        <h3 class="cat-card__title">預算決策</h3>
+        <p class="cat-card__desc">根據成效數據決定何時擴量 / 縮量 / 停止，小預算下的資源配置邏輯</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- HOME RECENT POSTS (section 3 of 4) -->
+<section class="home-recent">
+  <div class="home-recent__inner">
+    <p class="home-recent__heading">近期操盤紀錄</p>
+    {{ $catLabels := dict "data-diagnosis" "指標診斷" "material-analysis" "素材分析" "budget-decision" "預算決策" }}
+    <ul class="article-list">
+      {{ range first 8 ($allPosts.ByDate.Reverse) }}
+      {{ $page := . }}
+      {{ $sectionSlug := path.Base $page.File.Dir | strings.TrimSuffix "/" }}
+      {{ $catLabel := index $catLabels $sectionSlug | default $sectionSlug }}
+      <li class="article-list__item">
+        {{ if not .Date.IsZero }}
+        <span class="article-list__date">{{ .Date.Format "2006-01-02" }}</span>
+        {{ end }}
+        <div>
+          <span class="article-list__title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </span>
+          <span class="meta-tag article-list__tag">{{ $catLabel }}</span>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+
+{{ end }}

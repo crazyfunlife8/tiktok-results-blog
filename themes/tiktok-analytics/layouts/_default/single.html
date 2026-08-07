@@ -1,0 +1,63 @@
+{{ define "main" }}
+{{/* single.html — C站 單篇文章頁 (View C mockup)
+     article-header + answer-first 摘要段 + article-body
+     categories source: Option A = .Section（設計規格書 §十一·十二）
+     image: page bundle aware pattern (§十) */}}
+
+{{/* 分類中文標籤對照 */}}
+{{ $catLabels := dict "data-diagnosis" "指標診斷" "material-analysis" "素材分析" "budget-decision" "預算決策" }}
+{{ $sectionSlug := path.Base .File.Dir }}
+{{ $catLabel := index $catLabels $sectionSlug | default .CurrentSection.Title }}
+
+{{/* OG image for article (§十 page bundle aware) */}}
+{{ $page := . }}
+{{ $imgURL := "" }}
+{{ with .Params.image }}
+  {{ $imgRef := . }}
+  {{ with $page.Resources.GetMatch $imgRef }}
+    {{ $imgURL = .RelPermalink }}
+  {{ else }}
+    {{ $imgURL = $imgRef | absURL }}
+  {{ end }}
+{{ end }}
+
+<div class="article-header">
+  <div class="article-header__inner">
+    <nav class="article-header__breadcrumb" aria-label="breadcrumb">
+      <a href="{{ .Site.BaseURL }}">首頁</a>
+      <span>›</span>
+      <a href="{{ .CurrentSection.RelPermalink }}">{{ $catLabel }}</a>
+      <span>›</span>
+      <span>{{ .Title | truncate 30 "..." }}</span>
+    </nav>
+    <h1 class="article-header__title">{{ .Title }}</h1>
+    <div class="article-header__meta">
+      <span class="meta-tag">{{ $catLabel }}</span>
+      {{ if not .Date.IsZero }}
+      <span class="article-meta__date">{{ .Date.Format "2006-01-02" }}</span>
+      {{ end }}
+      {{ with .Params.readtime }}
+      <span class="article-meta__readtime">閱讀時間 約 {{ . }} 分鐘</span>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+{{ with .Description }}
+<!-- ANSWER-FIRST 摘要段 -->
+<div class="article-summary">
+  <div class="article-summary__inner">
+    <p class="article-summary__label">診斷結論</p>
+    <p class="article-summary__text">{{ . }}</p>
+  </div>
+</div>
+{{ end }}
+
+<!-- ARTICLE BODY -->
+<article class="article-body">
+  <div class="article-body__inner">
+    {{ .Content }}
+  </div>
+</article>
+
+{{ end }}

@@ -1,0 +1,14 @@
+{{/* partials/hero-preload.html
+     依當前頁面類型決定 hero image preload（§十一·七）
+     C站設計規格書 §四·二 規範 2.3：above-fold = 純文字 hero，LCP element = h1 文字
+     本站無 hero image，hero preload 條件不成立 → 輸出空白（Gate 12 條件性 skip）*/}}
+{{ if .IsHome }}
+  {{/* C站首頁無 hero image（純文字 editorial）— preload 跳過 */}}
+{{ else if .IsPage }}
+  {{ with .Params.image }}
+    {{ $imgRef := . }}
+    {{ with $.Resources.GetMatch $imgRef }}
+  <link rel="preload" as="image" href="{{ .RelPermalink }}" fetchpriority="high">
+    {{ end }}
+  {{ end }}
+{{ end }}

@@ -1,0 +1,12 @@
+name = "tiktok-analytics"
+license = "MIT"
+licenselink = ""
+description = "C站 跳動e成效 自建主題 — FiveThirtyEight editorial 路線 × field notes 操盤氣質"
+homepage = "https://results.nestdigitalai.com/"
+tags = ["editorial", "analytics", "minimal"]
+features = ["blog"]
+min_version = "0.110.0"
+
+[author]
+  name = "Nest Digital AI"
+  homepage = "https://nestdigitalai.com"

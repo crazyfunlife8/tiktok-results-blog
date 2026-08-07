@@ -1,0 +1,9 @@
+{{- /* num-highlight shortcode (self-closing): single-cell number highlight box.
+       C站 KPI 指標卡片 — §十二 shortcode template
+       For multi-cell layout, use raw HTML with .num-highlight + .num-cell */}}
+{{- $value := .Get "value" -}}
+{{- $unit := .Get "unit" -}}
+{{- $label := .Get "label" -}}
+{{- $note := .Get "note" -}}
+{{- $status := .Get "status" | default "" -}}
+<div class="num-highlight"><div class="num-cell">{{ with $label }}<div class="num-label">{{ . }}</div>{{ end }}<div class="num-value{{ if $status }} num-value--{{ $status }}{{ end }}">{{ $value }}</div>{{ with $unit }}<div class="num-unit">{{ . }}</div>{{ end }}{{ with $note }}<div class="num-note">{{ . }}</div>{{ end }}</div></div>

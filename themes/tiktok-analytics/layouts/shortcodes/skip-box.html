@@ -1,0 +1,3 @@
+{{- /* skip-box shortcode: exclusion conditions warning box — §十二 */ -}}
+{{- $title := .Get "title" | default "這種情況建議跳過" -}}
+<div class="skip-box"><div class="skip-box-header"><span class="skip-box-icon">!</span><span class="skip-box-title">{{ $title }}</span></div><div class="skip-box-body">{{ .Inner | markdownify }}</div></div>

@@ -1,0 +1,13 @@
+{{/* partials/pagination.html — C站 分頁導航 */}}
+{{ $paginator := .Paginator }}
+{{ if gt $paginator.TotalPages 1 }}
+<nav class="pagination" aria-label="分頁導航">
+  {{ if $paginator.HasPrev }}
+    <a href="{{ $paginator.Prev.URL }}" class="pagination__link pagination__link--prev">← 較新</a>
+  {{ end }}
+  <span class="pagination__info">第 {{ $paginator.PageNumber }} / {{ $paginator.TotalPages }} 頁</span>
+  {{ if $paginator.HasNext }}
+    <a href="{{ $paginator.Next.URL }}" class="pagination__link pagination__link--next">較舊 →</a>
+  {{ end }}
+</nav>
+{{ end }}

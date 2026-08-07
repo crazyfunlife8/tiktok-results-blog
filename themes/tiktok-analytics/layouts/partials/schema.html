@@ -1,0 +1,116 @@
+{{/* partials/schema.html
+     JSON-LD structured data — dict + jsonify + safeJS pattern (§十一·三 紀律)
+     包含：BlogPosting / BreadcrumbList / WebSite / speakableSpecification (§十一·十一·1)
+     Article.about + Wikidata (§十一·十一·2 — 讀 frontmatter entities:)
+     集體 voice 站 (C站 brand author) — Person.knowsAbout / alumniOf 跳過 (§十一·十一·3 條件性) */}}
+{{ $ogImage := partial "og-image-resolve.html" . }}
+{{ if not $ogImage }}
+  {{ $ogImage = "/og-default.jpg" | absURL }}
+{{ end }}
+
+{{ if .IsHome }}
+{{/* ── WebSite schema ── */}}
+{{- $website := dict
+  "@context" "https://schema.org"
+  "@type" "WebSite"
+  "name" .Site.Title
+  "url" .Site.BaseURL
+  "description" .Site.Params.description
+  "inLanguage" "zh-TW"
+-}}
+<script type="application/ld+json">
+{{ $website | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+
+{{ else if .IsPage }}
+{{/* ── BreadcrumbList ── */}}
+{{- $breadItems := slice
+  (dict "@type" "ListItem" "position" 1 "name" "首頁" "item" .Site.BaseURL)
+-}}
+{{ with .CurrentSection }}
+  {{ if not .IsHome }}
+    {{- $breadItems = $breadItems | append (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink) -}}
+  {{ end }}
+{{ end }}
+{{- $breadItems = $breadItems | append (dict "@type" "ListItem" "position" (len $breadItems | add 1) "name" .Title "item" .Permalink) -}}
+
+{{- $breadcrumb := dict
+  "@context" "https://schema.org"
+  "@type" "BreadcrumbList"
+  "itemListElement" $breadItems
+-}}
+<script type="application/ld+json">
+{{ $breadcrumb | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+
+{{/* ── speakableSpecification (§十一·十一·1) ── */}}
+{{- $speakable := dict
+  "@type" "SpeakableSpecification"
+  "cssSelector" (slice ".article-summary__text" ".lead" "h1")
+-}}
+
+{{/* ── Author — brand voice (C站 field notes 品牌作者) ── */}}
+{{- $author := dict
+  "@type" "Organization"
+  "name" .Site.Params.author
+  "url" .Site.BaseURL
+-}}
+
+{{/* ── Article.about — 讀 frontmatter entities: (§十一·十一·2 條件性) ── */}}
+{{- $aboutItems := slice -}}
+{{ range .Params.entities }}
+  {{- $aboutItems = $aboutItems | append (dict "@type" "Thing" "name" .name "sameAs" .sameAs) -}}
+{{ end }}
+
+{{/* ── BlogPosting schema ── */}}
+{{- $blogPosting := dict
+  "@context" "https://schema.org"
+  "@type" "BlogPosting"
+  "headline" .Title
+  "description" (.Description | default .Site.Params.description)
+  "image" $ogImage
+  "url" .Permalink
+  "datePublished" (.Date.Format "2006-01-02")
+  "dateModified" (.Lastmod.Format "2006-01-02")
+  "author" $author
+  "publisher" (dict "@type" "Organization" "name" .Site.Title "url" .Site.BaseURL)
+  "inLanguage" "zh-TW"
+  "speakable" $speakable
+  "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+-}}
+{{ if gt (len $aboutItems) 0 }}
+  {{- $blogPosting = merge $blogPosting (dict "about" $aboutItems) -}}
+{{ end }}
+<script type="application/ld+json">
+{{ $blogPosting | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+
+{{- if .Params.faq_items -}}
+{{- $faqEntities := slice -}}
+{{- range .Params.faq_items -}}
+  {{- $faqEntities = $faqEntities | append (dict "@type" "Question" "name" .q "acceptedAnswer" (dict "@type" "Answer" "text" .a)) -}}
+{{- end -}}
+{{- $faqPage := dict
+  "@context" "https://schema.org"
+  "@type" "FAQPage"
+  "mainEntity" $faqEntities
+-}}
+<script type="application/ld+json">
+{{ $faqPage | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{- end }}
+
+{{ else if .IsSection }}
+{{/* ── Section page: CollectionPage schema ── */}}
+{{- $webpage := dict
+  "@context" "https://schema.org"
+  "@type" "CollectionPage"
+  "name" .Title
+  "url" .Permalink
+  "description" (.Description | default .Site.Params.description)
+  "inLanguage" "zh-TW"
+-}}
+<script type="application/ld+json">
+{{ $webpage | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{ end }}

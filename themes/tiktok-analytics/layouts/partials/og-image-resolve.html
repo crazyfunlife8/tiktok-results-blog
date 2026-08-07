@@ -1,0 +1,15 @@
+{{/* partials/og-image-resolve.html
+     輸入：page context
+     輸出：解析後的絕對 URL 字串（為空字串時呼叫端 fallback 到 og-default.jpg）
+     §十一·一 OG image partial 集中（§十 page bundle aware pattern） */}}
+{{ $page := . }}
+{{ $imgURL := "" }}
+{{ with $page.Params.image }}
+  {{ $imgRef := . }}
+  {{ with $page.Resources.GetMatch $imgRef }}
+    {{ $imgURL = .Permalink }}
+  {{ else }}
+    {{ $imgURL = $imgRef | absURL }}
+  {{ end }}
+{{ end }}
+{{ return $imgURL }}

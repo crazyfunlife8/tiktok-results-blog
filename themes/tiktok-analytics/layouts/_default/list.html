@@ -1,0 +1,55 @@
+{{ define "main" }}
+{{/* list.html — C站 分類列表頁 (View B mockup)
+     cat-header + breadcrumb + post-list (100px date + 1fr article info)
+     listing context: $page := . before range (§十 image 規範) */}}
+
+{{/* 分類中文標籤對照 — Option A: .Section 讀取分類（設計規格書 §十一·十二）*/}}
+{{ $catLabels := dict "data-diagnosis" "指標診斷" "material-analysis" "素材分析" "budget-decision" "預算決策" }}
+{{ $sectionSlug := .Section }}
+{{ $catLabel := index $catLabels $sectionSlug | default .Title }}
+
+<div class="cat-header">
+  <div class="cat-header__inner">
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="{{ .Site.BaseURL }}">首頁</a>
+      <span>›</span>
+      <span>{{ $catLabel }}</span>
+    </nav>
+    <h1 class="cat-header__title">{{ $catLabel }}</h1>
+    <p class="cat-header__desc">{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}</p>
+  </div>
+</div>
+
+<div class="cat-body">
+  <ul class="post-list">
+    {{ $paginator := .Paginate .Pages 10 }}
+    {{ range $paginator.Pages }}
+    {{ $page := . }}
+    <li class="post-card">
+      <div class="post-card__date-block">
+        {{ if not .Date.IsZero }}
+        <span class="post-card__date">{{ .Date.Format "2006-01-02" }}</span>
+        {{ end }}
+        {{ with .Params.readtime }}
+        <span class="post-card__readtime">{{ . }} min</span>
+        {{ end }}
+      </div>
+      <div>
+        <h2 class="post-card__title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+        <p class="post-card__excerpt">{{ .Description | default (.Summary | plainify | truncate 120 "...") }}</p>
+        <div class="post-card__tags">
+          {{ range .Params.tags }}
+          <span class="meta-tag">{{ . }}</span>
+          {{ end }}
+        </div>
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+
+  {{ partial "pagination.html" . }}
+</div>
+
+{{ end }}

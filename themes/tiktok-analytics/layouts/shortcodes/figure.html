@@ -1,0 +1,28 @@
+{{/* shortcodes/figure.html — page bundle aware figure shortcode
+     Gate 12: width/height 必填（防 CLS）
+     loading: 首屏 eager，其餘 lazy
+     §十二 shortcode template */}}
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $caption := .Get "caption" | default "" }}
+{{ $loading := .Get "loading" | default "lazy" }}
+{{ $class := .Get "class" | default "" }}
+
+{{ $imgResource := .Page.Resources.GetMatch $src }}
+{{ $width := .Get "width" | default "" }}
+{{ $height := .Get "height" | default "" }}
+{{ if $imgResource }}
+  {{ $width = $imgResource.Width | string }}
+  {{ $height = $imgResource.Height | string }}
+  {{ $src = $imgResource.RelPermalink }}
+{{ end }}
+
+<figure{{ with $class }} class="{{ . }}"{{ end }}>
+  <img src="{{ $src }}"
+       alt="{{ $alt }}"
+       {{ with $width }}width="{{ . }}"{{ end }}
+       {{ with $height }}height="{{ . }}"{{ end }}
+       loading="{{ $loading }}"
+       decoding="async">
+  {{ with $caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>

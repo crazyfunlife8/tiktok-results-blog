@@ -1,0 +1,49 @@
+baseURL = "https://results.nestdigitalai.com/"
+languageCode = "zh-TW"
+title = "跳動e成效 — TikTok廣告成效診斷"
+theme = "tiktok-analytics"
+hasCJKLanguage = true
+enableGitInfo = false
+defaultContentLanguage = "zh-tw"
+summaryLength = 70
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+
+
+[params]
+  description = "TikTok廣告成效診斷——從投放後台數據找出「哪裡斷掉」、做出下一步決定。ROAS/CTR/CPC基準對照、素材分析、預算決策框架，台灣微型商家視角。"
+  author = "跳動e成效"
+  siteKeywords = "TikTok廣告投放,廣告成效分析,ROAS,廣告投放優化,廣告數據分析,CTR廣告,廣告素材,投放預算規劃"
+  ogImage = "/og-default.jpg"
+  twitterCard = "summary_large_image"
+  ctaURL = "https://nestdigitalai.com/services/ads"
+  ctaText = "找跳動E投放看報表"
+
+[menu]
+  [[menu.main]]
+    name = "指標診斷"
+    url = "/posts/data-diagnosis/"
+    weight = 1
+  [[menu.main]]
+    name = "素材分析"
+    url = "/posts/material-analysis/"
+    weight = 2
+  [[menu.main]]
+    name = "預算決策"
+    url = "/posts/budget-decision/"
+    weight = 3
+  [[menu.main]]
+    name = "關於"
+    url = "/about/"
+    weight = 4
+
+[taxonomies]
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
