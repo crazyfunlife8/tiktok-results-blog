@@ -30,4 +30,6 @@ readtime: 4
 
 確認這三點後，先替換縮圖或換開場剪輯，觀察 CTR 是否改善，再決定整支素材是否要重拍。
 
+在改動素材之前，先確認你的 CTR 數字放到台灣市場基準是否真的偏低——[台灣市場 TikTok 廣告 CTR 診斷指南](/posts/data-diagnosis/ctr-diagnosis-guide/)有品類基準值對照表，可以先確認再決定要不要換素材。
+
 素材診斷完成後，下一步是決定預算怎麼分配——[NT$900/天廣告跑三天的判斷框架](/posts/budget-decision/three-day-budget-framework/)。
