@@ -3,6 +3,7 @@ title: "ROAS 基準對照：台灣微型電商廣告成效的起點"
 date: 2026-08-06
 lastmod: 2026-08-06
 draft: false
+slug: init
 categories: ["指標診斷"]
 tags: ["ROAS", "基準對照", "廣告成效"]
 description: "ROAS 低於 1.5 在台灣多數電商都是虧損。這篇用損益平衡公式幫你算出自己的 ROAS 及格線，並對照台灣各垂直市場的真實分布範圍。"
@@ -36,4 +37,4 @@ ROAS 低不一定要立刻停廣告。先確認三件事：
 
 確認完這三件事，才決定是停、調還是繼續等數據穩定。
 
-看完 ROAS 基準後，如果你在判斷某支廣告素材是否值得繼續跑，可以參考[高曝光低點擊：素材沒效的第一個診斷步驟](/posts/material-analysis/init/)。
+看完 ROAS 基準後，如果你在判斷某支廣告素材是否值得繼續跑，可以參考[高曝光低點擊：素材沒效的第一個診斷步驟](/posts/material-analysis/high-impression-low-ctr/)。

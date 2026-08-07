@@ -3,6 +3,7 @@ title: "高曝光低點擊：素材沒效的第一個診斷步驟"
 date: 2026-08-06
 lastmod: 2026-08-06
 draft: false
+slug: init
 categories: ["素材分析"]
 tags: ["CTR", "素材診斷", "廣告影片"]
 description: "高曝光低點擊代表受眾看到了但沒有行動。問題通常在前三秒的鉤子或縮圖。這篇用後台數據告訴你怎麼判斷是創意問題還是受眾問題。"
@@ -30,4 +31,4 @@ readtime: 4
 
 確認這三點後，先替換縮圖或換開場剪輯，觀察 CTR 是否改善，再決定整支素材是否要重拍。
 
-素材診斷完成後，下一步是決定預算怎麼分配——[NT$900/天廣告跑三天的判斷框架](/posts/budget-decision/init/)。
+素材診斷完成後，下一步是決定預算怎麼分配——[NT$900/天廣告跑三天的判斷框架](/posts/budget-decision/three-day-budget-framework/)。
