@@ -106,7 +106,7 @@ CPV 主要用於影片觀看目標（而非轉換目標）的廣告。台灣市�
 
 ---
 
-看懂七個數字之後，下一步是知道「哪個數字異常時優先從哪裡動手」。CTR 低的診斷路徑可以參考 [CTR 點擊率診斷三步框架](https://results.nestdigitalai.com/posts/data-diagnosis/ctr-diagnosis-guide/)；CPM 爆高的根因分析可以參考 [CPM 曝光成本診斷三步法](https://results.nestdigitalai.com/posts/data-diagnosis/cpm-diagnosis-guide/)。如果不確定自己的 ROAS 及格線怎麼算，可以用 [台灣市場 ROAS 損益平衡公式](https://results.nestdigitalai.com/posts/data-diagnosis/roas-baseline/) 先確認損益平衡點。
+看懂七個數字之後，下一步是知道「哪個數字異常時優先從哪裡動手」。CTR 低的診斷路徑可以參考 [CTR 點擊率診斷三步框架](https://results.nestdigitalai.com/posts/data-diagnosis/ctr-diagnosis-guide/)；CPM 爆高的根因分析可以參考 [CPM 曝光成本診斷三步法](https://results.nestdigitalai.com/posts/data-diagnosis/cpm-diagnosis-guide/)。如果不確定自己的 ROAS 及格線怎麼算，可以用 [台灣市場 ROAS 損益平衡公式](https://results.nestdigitalai.com/posts/data-diagnosis/roas-baseline/) 先確認損益平衡點。如果遇到 ROAS、CTR、CPC 三個數字同時難看，可以參考 [多指標交叉診斷框架](/posts/data-diagnosis/multi-metric-diagnosis/)，從數字組合反推問題出在哪一環。
 
 還是看了報表不知道下一步？可以直接找[跳動E投放](https://nestdigitalai.com/services/ads)的人，把後台報表截圖傳過來，會幫你解讀數字背後的問題。
 
