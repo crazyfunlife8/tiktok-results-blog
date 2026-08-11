@@ -76,7 +76,7 @@ TikTok 官方的學習期結束條件是 **50 個最適化事件**（依你的�
 
 ---
 
-廣告學習期是你在 TikTok 廣告後台會看到最久的狀態。理解學習期的邏輯，可以讓你避免「三天決定放棄」的常見錯誤。學習期結束後，才是真正可以看指標、做決定的時候——那個時候的 ROAS 判斷可以參考 [NT$900/天三天框架](https://results.nestdigitalai.com/posts/budget-decision/three-day-budget-framework/)，或用[台灣市場 ROAS 損益平衡公式](https://results.nestdigitalai.com/posts/data-diagnosis/roas-baseline/)確認自己的及格線。
+廣告學習期是你在 TikTok 廣告後台會看到最久的狀態。理解學習期的邏輯，可以讓你避免「三天決定放棄」的常見錯誤。學習期結束後，才是真正可以看指標、做決定的時候——那個時候的 ROAS 判斷可以參考 [NT$900/天三天框架](https://results.nestdigitalai.com/posts/budget-decision/three-day-budget-framework/)，或用[台灣市場 ROAS 損益平衡公式](https://results.nestdigitalai.com/posts/data-diagnosis/roas-baseline/)確認自己的及格線。學習期結束後 ROAS 穩定、想要擴大投放規模，擴量時機和執行方式可以參考 [判斷擴量時機的三個信號](https://results.nestdigitalai.com/posts/budget-decision/scale-up-timing/)。
 
 如果學習期內看到 CPM 或 CTR 異常，可以參考 [CPM 曝光成本診斷三步法](https://results.nestdigitalai.com/posts/data-diagnosis/cpm-diagnosis-guide/)和 [CTR 診斷三步框架](https://results.nestdigitalai.com/posts/data-diagnosis/ctr-diagnosis-guide/)，確認是不是需要立刻處理的問題還是學習期正常波動。
 
