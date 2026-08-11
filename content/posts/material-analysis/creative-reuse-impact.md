@@ -70,7 +70,7 @@ readtime: 6
 
 素材複用是否有問題，關鍵不在「複用本身」，而在「受眾是否重疊」。同一支素材在不重疊受眾中同時跑，是測試素材對不同受眾表現的有效手段；但在重疊受眾中同時競標，反而讓成本墊高。判斷重疊程度，用後台的受眾重疊工具直接確認，而不是靠推測。
 
-素材在多組之間的 CTR 差異，可以和 [多指標交叉診斷框架](https://results.nestdigitalai.com/posts/data-diagnosis/multi-metric-diagnosis/) 搭配，判斷是成效問題還是設定問題。不同廣告組的素材跑久了出現疲勞訊號時，判斷時機可以參考 [創意疲勞判斷指南](https://results.nestdigitalai.com/posts/material-analysis/creative-fatigue-guide/)。
+素材在多組之間的 CTR 差異，可以和 [多指標交叉診斷框架](https://results.nestdigitalai.com/posts/data-diagnosis/multi-metric-diagnosis/) 搭配，判斷是成效問題還是設定問題。不同廣告組的素材跑久了出現疲勞訊號時，判斷時機可以參考 [創意疲勞判斷指南](https://results.nestdigitalai.com/posts/material-analysis/creative-fatigue-guide/)。當各組成效出現差異、不確定是素材問題還是受眾問題時，可以用 [從後台數字判斷：換素材還是換受眾？](https://results.nestdigitalai.com/posts/material-analysis/audience-vs-creative-diagnosis/) 的決策樹來判斷。
 
 **延伸閱讀（外部資源）：**
 - TikTok for Business 官方說明：[廣告組受眾重疊工具](https://ads.tiktok.com/help/article/audience-overlap)（如何使用後台工具確認廣告組之間的受眾重疊狀況）
