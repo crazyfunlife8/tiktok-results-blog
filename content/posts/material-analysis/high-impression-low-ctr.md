@@ -32,4 +32,4 @@ readtime: 4
 
 在改動素材之前，先確認你的 CTR 數字放到台灣市場基準是否真的偏低——[台灣市場 TikTok 廣告 CTR 診斷指南](/posts/data-diagnosis/ctr-diagnosis-guide/)有品類基準值對照表，可以先確認再決定要不要換素材。
 
-素材診斷完成後，下一步是決定預算怎麼分配——[NT$900/天廣告跑三天的判斷框架](/posts/budget-decision/three-day-budget-framework/)。如果修完素材後 CTR 回來了、但 ROAS 還是很低，問題可能不在廣告而在落地頁——[高點擊低轉換的根因診斷](/posts/material-analysis/high-ctr-low-conversion/)說明了廣告帶人進來之後流失的三個原因。
+素材診斷完成後，下一步是決定預算怎麼分配——[NT$900/天廣告跑三天的判斷框架](/posts/budget-decision/three-day-budget-framework/)。如果修完素材後 CTR 回來了、但 ROAS 還是很低，問題可能不在廣告而在落地頁——[高點擊低轉換的根因診斷](/posts/material-analysis/high-ctr-low-conversion/)說明了廣告帶人進來之後流失的三個原因。同一支素材想複用到多個廣告組測試不同受眾，建議先看[素材複用的成效影響](/posts/material-analysis/creative-reuse-impact/)再決定做法；不確定是素材問題還是受眾問題，可以用[從後台數字判斷換素材或換受眾的決策樹](/posts/material-analysis/audience-vs-creative-diagnosis/)系統診斷。
