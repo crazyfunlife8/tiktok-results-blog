@@ -89,7 +89,7 @@ CTR 低是受眾看到廣告沒反應，ROAS 低是點進來的人不買。這�
 
 ---
 
-多指標交叉診斷的核心是「鎖定最先斷的那一環」，不是把三個問題都列出來一起處理。CTR 沒修好之前，ROAS 的問題是沒有診斷意義的；落地頁沒有接住流量，調再多廣告組設定也是白費。如果 CTR 診斷需要更細的步驟，可以參考 [TikTok 廣告 CTR 診斷三步框架](https://results.nestdigitalai.com/posts/data-diagnosis/ctr-diagnosis-guide/)；如果 CPM 同時偏高，可以對照 [CPM 爆高還是偏低的診斷三步法](https://results.nestdigitalai.com/posts/data-diagnosis/cpm-diagnosis-guide/)，確認是受眾問題還是出價問題。整體後台七個數字的定義和基準值，在[廣告後台報表七個數字白話解讀](https://results.nestdigitalai.com/posts/data-diagnosis/report-seven-metrics-guide/)有完整說明。
+多指標交叉診斷的核心是「鎖定最先斷的那一環」，不是把三個問題都列出來一起處理。CTR 沒修好之前，ROAS 的問題是沒有診斷意義的；落地頁沒有接住流量，調再多廣告組設定也是白費。如果 CTR 診斷需要更細的步驟，可以參考 [TikTok 廣告 CTR 診斷三步框架](https://results.nestdigitalai.com/posts/data-diagnosis/ctr-diagnosis-guide/)；如果 CPM 同時偏高，可以對照 [CPM 爆高還是偏低的診斷三步法](https://results.nestdigitalai.com/posts/data-diagnosis/cpm-diagnosis-guide/)，確認是受眾問題還是出價問題。如果 CPC 突然大幅飆升，可以看 [CPC 廣告點擊成本飆升的三個真因](/posts/data-diagnosis/cpc-spike-diagnosis/) 找到根因。整體後台七個數字的定義和基準值，在[廣告後台報表七個數字白話解讀](https://results.nestdigitalai.com/posts/data-diagnosis/report-seven-metrics-guide/)有完整說明。
 
 **延伸閱讀（外部資源）：**
 - TikTok for Business 官方廣告學習中心：[廣告指標說明文件](https://ads.tiktok.com/help/article/ad-metrics)（CPM / CTR / CPC / ROAS 定義與計算公式官方版本）
