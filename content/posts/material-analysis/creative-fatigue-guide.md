@@ -78,7 +78,7 @@ CPC = CPM ÷ CTR × 10。如果 CPM 沒有明顯上漲（排除市場競爭因�
 
 創意疲勞的判斷核心是「CTR 衰退幅度 + 頻次 + 成本走向」三個訊號交叉確認，而不是單看一個數字。準備新素材的時機點要比「感覺快疲勞了」早一步——在衰退期開始時準備，而不是在疲勞期才動手。
 
-如果換素材後 CTR 回來了但 ROAS 沒有改善，問題可能不在素材而在落地頁，可以參考 [高點擊低轉換的根因診斷](https://results.nestdigitalai.com/posts/material-analysis/high-ctr-low-conversion/)。更換素材後的整體廣告數據怎麼判讀，可以對照 [TikTok 廣告後台報表七個數字白話解讀](https://results.nestdigitalai.com/posts/data-diagnosis/report-seven-metrics-guide/)。
+如果換素材後 CTR 回來了但 ROAS 沒有改善，問題可能不在素材而在落地頁，可以參考 [高點擊低轉換的根因診斷](https://results.nestdigitalai.com/posts/material-analysis/high-ctr-low-conversion/)。更換素材後的整體廣告數據怎麼判讀，可以對照 [TikTok 廣告後台報表七個數字白話解讀](https://results.nestdigitalai.com/posts/data-diagnosis/report-seven-metrics-guide/)。如果同一支素材同時跑多個廣告組，每組的疲勞速度可能不同（受眾池大小不同），可以搭配 [素材複用的成效影響](https://results.nestdigitalai.com/posts/material-analysis/creative-reuse-impact/) 一起看。
 
 **延伸閱讀（外部資源）：**
 - TikTok for Business 官方廣告學習中心：[廣告素材疲勞說明](https://ads.tiktok.com/help/article/creative-fatigue)（創意疲勞的官方定義與 TikTok 平台的偵測機制）
