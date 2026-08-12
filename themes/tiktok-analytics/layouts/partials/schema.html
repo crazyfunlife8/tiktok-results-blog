@@ -4,9 +4,6 @@
      Article.about + Wikidata (§十一·十一·2 — 讀 frontmatter entities:)
      集體 voice 站 (C站 brand author) — Person.knowsAbout / alumniOf 跳過 (§十一·十一·3 條件性) */}}
 {{ $ogImage := partial "og-image-resolve.html" . }}
-{{ if not $ogImage }}
-  {{ $ogImage = "/og-default.jpg" | absURL }}
-{{ end }}
 
 {{ if .IsHome }}
 {{/* ── WebSite schema ── */}}
@@ -68,7 +65,6 @@
   "@type" "BlogPosting"
   "headline" .Title
   "description" (.Description | default .Site.Params.description)
-  "image" $ogImage
   "url" .Permalink
   "datePublished" (.Date.Format "2006-01-02")
   "dateModified" (.Lastmod.Format "2006-01-02")
@@ -78,6 +74,9 @@
   "speakable" $speakable
   "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
 -}}
+{{ if $ogImage }}
+  {{- $blogPosting = merge $blogPosting (dict "image" $ogImage) -}}
+{{ end }}
 {{ if gt (len $aboutItems) 0 }}
   {{- $blogPosting = merge $blogPosting (dict "about" $aboutItems) -}}
 {{ end }}

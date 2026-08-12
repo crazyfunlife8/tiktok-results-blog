@@ -21,7 +21,7 @@ CTR（Click-Through Rate，點擊率）是廣告曝光到點擊的轉換率。�
 
 {{< num-highlight value="1.5%–3.0%" label="台灣 TikTok 廣告正常 CTR 範圍" note="自有後台 2026 Q2–Q3 投放紀錄，含服飾、保養品、食品三個品類" >}}
 
-從我跑過的台灣市場數據看，不同品類的 CTR 基準有差距：
+從我跑過的台灣市場數據看，不同品類的 CTR 基準有差距（資料來源：自有後台 2026 Q2–Q3 投放紀錄）：
 
 - 保養品 / 美妝：CTR 通常 2.5%–4.0%（視覺衝擊強、受眾主動搜尋需求高）
 - 服飾 / 鞋包：CTR 1.5%–2.8%
@@ -88,7 +88,7 @@ CPM 偏高（超過 NT$200）時，問題通常在受眾設定太廣或出價競
 
 CTR 低的診斷路徑是固定的：先確認品類基準是否真的偏低，再用 CPM 交叉判斷根因，再對應採取行動。這三步完成後，如果 CTR 回到正常範圍但還是沒有轉換，問題通常不在廣告，而在 ROAS 換算——你可以用[台灣市場 ROAS 基準對照表](https://results.nestdigitalai.com/posts/data-diagnosis/roas-baseline/)確認自己的損益平衡 ROAS 是否算對了。
 
-CTR 診斷中 CPM 是重要的交叉指標——如果你同時看到 CPM 異常，可以參考 [CPM 爆高還是偏低的診斷三步法](/posts/data-diagnosis/cpm-diagnosis-guide/)，從曝光成本這個維度確認根因。如果診斷後發現是高曝光低點擊的狀況，[高曝光低點擊的創意問題診斷步驟](https://results.nestdigitalai.com/posts/material-analysis/high-impression-low-ctr/)有更細的素材檢查清單。看完還是不確定自己的後台數字該怎麼解讀，可以直接找[跳動E投放](https://ads.nest-creation.com)的人幫你看報表。
+CTR 診斷中 CPM 是重要的交叉指標——如果你同時看到 CPM 異常，可以參考 [CPM 爆高還是偏低的診斷三步法](/posts/data-diagnosis/cpm-diagnosis-guide/)，從曝光成本這個維度確認根因。如果診斷後發現是高曝光低點擊的狀況，[高曝光低點擊的創意問題診斷步驟](https://results.nestdigitalai.com/posts/material-analysis/high-impression-low-ctr/)有更細的素材檢查清單。看完還是不確定自己的後台數字該怎麼解讀，可以直接找[跳動E投放](https://nestdigitalai.com/services/ads)的人幫你看報表。
 
 **延伸閱讀（外部資源）：**
 - TikTok for Business 官方廣告學習中心：[廣告指標說明文件](https://ads.tiktok.com/help/article/ad-metrics)（CPM / CTR / CVR 定義與計算公式官方版本）

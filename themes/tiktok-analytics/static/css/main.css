@@ -945,6 +945,22 @@ p  { font-size: 1.0625rem; line-height: var(--line-body); }
   font-size: 0.6875rem;
   color: rgba(255,255,255,0.4);
 }
+.site-footer__nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.site-footer__nav-link {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+}
+.site-footer__nav-link:hover {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+}
 
 /* ============================================================
    PAGINATION
