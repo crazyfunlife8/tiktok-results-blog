@@ -12,4 +12,7 @@
     {{ $imgURL = $imgRef | absURL }}
   {{ end }}
 {{ end }}
+{{ if not $imgURL }}
+  {{ $imgURL = "/og-default.jpg" | absURL }}
+{{ end }}
 {{ return $imgURL }}
