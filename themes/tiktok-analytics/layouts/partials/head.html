@@ -97,3 +97,14 @@ h3{font-size:1.125rem}
 
 {{/* ── Structured data (schema) ── */}}
 {{ partial "schema.html" . }}
+
+{{/* Google Analytics 4 */}}
+{{ with .Site.Params.ga4_measurement_id }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ . }}');
+</script>
+{{ end }}
