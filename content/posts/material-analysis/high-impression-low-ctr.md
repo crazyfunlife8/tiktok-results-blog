@@ -10,6 +10,10 @@ author: "跳動e成效"
 readtime: 4
 ---
 
+高曝光低點擊代表你的廣告已經到達受眾面前，但受眾選擇不行動——這個問題的根因幾乎永遠不會靠換受眾解決，**要優先從素材前三秒下手，確認 CTR 的數字是真的偏低之後，再決定動素材還是動受眾設定**。
+
+<!-- IG-firsthand -->
+
 ## 高曝光低點擊代表什麼
 
 廣告曝光很高但點擊率（CTR）低，意思是 TikTok 把你的廣告推出去了，但受眾看到後沒有行動。這個訊號不一定是壞事——先確認 CTR 的基準。
@@ -18,7 +22,7 @@ readtime: 4
 
 ## 判斷是創意問題還是受眾問題
 
-兩個指標一起看：
+根因有兩個方向，判斷方式不同——這裡用 CPM 當交叉指標，因為 CPM 能反映「系統找到的是哪種受眾」，比單看 CTR 更能定位問題層：
 
 - **CPM 正常（低於 NT$120），CTR 低** → 受眾看到了、沒有被吸引 → 創意問題（前三秒鉤子 / 縮圖 / 開場文字）
 - **CPM 異常高（超過 NT$200），CTR 也低** → 受眾本來就不對 → 先調受眾再看 CTR
@@ -42,3 +46,8 @@ readtime: 4
 **延伸閱讀（外部資源）：**
 - TikTok for Business 官方說明：[廣告創意最佳化指南](https://ads.tiktok.com/help/article/creative-best-practices)（官方建議的前三秒設計原則與縮圖規格）
 - WordStream：[TikTok 廣告點擊率基準與提升方法](https://www.wordstream.com/blog/ws/2022/09/27/tiktok-ads-benchmarks)（各品類 CTR 基準對照與素材診斷建議）
+
+## 延伸閱讀
+
+- [創意疲勞怎麼判斷？TikTok 廣告素材什麼時候該換了]({{< relref "posts/material-analysis/creative-fatigue-guide" >}})
+- [CPM 爆高還是偏低？TikTok 廣告曝光成本診斷三步法]({{< relref "posts/data-diagnosis/cpm-diagnosis-guide" >}})

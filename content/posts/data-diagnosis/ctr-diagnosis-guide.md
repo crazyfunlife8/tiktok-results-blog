@@ -128,6 +128,11 @@ CTR 診斷中 CPM 是重要的交叉指標——如果你同時看到 CPM 異常
 - TikTok for Business 官方廣告學習中心：[廣告指標說明文件](https://ads.tiktok.com/help/article/ad-metrics)（CPM / CTR / CVR 定義與計算公式官方版本）
 - WordStream 廣告效果基準報告：[Google Ads CTR 行業基準](https://www.wordstream.com/blog/ws/2016/02/29/google-adwords-industry-benchmarks)（不同行業 CTR 範圍的對照參考）
 
+## 延伸閱讀
+
+- [從後台數字判斷：換素材還是換受眾？診斷決策樹]({{< relref "posts/material-analysis/audience-vs-creative-diagnosis" >}})
+- [ROAS、CTR、CPC 同時難看怎麼辦？多指標交叉診斷框架]({{< relref "posts/data-diagnosis/multi-metric-diagnosis" >}})
+
 ---
 
 ## 常見問題

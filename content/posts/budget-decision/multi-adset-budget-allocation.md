@@ -97,6 +97,11 @@ Campaign Budget Optimization（CBO）是讓系統自動在廣告組之間分配�
 - TikTok for Business 官方說明：[廣告活動預算最佳化（CBO）說明](https://ads.tiktok.com/help/article/campaign-budget-optimization)（CBO 的運作機制、適合情境與各組最低預算設定方式）
 - WordStream：[多廣告組預算分配策略](https://www.wordstream.com/blog/ws/2023/05/ad-budget-allocation)（跨平台多廣告組預算配置邏輯，含集中 vs 分散的比較分析）
 
+## 延伸閱讀
+
+- [廣告跑得還不錯，什麼時候該擴量？判斷擴量時機的三個信號]({{< relref "posts/budget-decision/scale-up-timing" >}})
+- [廣告一直在跑但花不完預算怎麼辦？TikTok 廣告限制因素診斷]({{< relref "posts/budget-decision/budget-underspend-diagnosis" >}})
+
 ---
 
 ## 常見問題

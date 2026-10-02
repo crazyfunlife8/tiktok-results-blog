@@ -97,6 +97,11 @@ CTR 低不一定是素材爛——有時候是受眾設定太精準（受眾池�
 - TikTok for Business 官方廣告學習中心：[廣告受眾設定指南](https://ads.tiktok.com/help/article/targeting-options)（TikTok 廣告受眾興趣 / 行為標籤的官方說明與適用情境）
 - WordStream：[廣告 CTR 與 CVR 基準報告](https://www.wordstream.com/blog/ws/2022/09/27/tiktok-ads-benchmarks)（跨平台廣告 CTR / CVR 行業基準，適合比較你的數字是否在正常範圍內）
 
+## 延伸閱讀
+
+- [CTR 診斷三步框架：低點擊率的根因怎麼找]({{< relref "posts/data-diagnosis/ctr-diagnosis-guide" >}})
+- [高曝光低點擊：素材沒效的第一個診斷步驟]({{< relref "posts/material-analysis/high-impression-low-ctr" >}})
+
 ---
 
 ## 常見問題

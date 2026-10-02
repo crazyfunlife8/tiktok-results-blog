@@ -85,6 +85,11 @@ CPC = CPM ÷ CTR × 10。如果 CPM 沒有明顯上漲（排除市場競爭因�
 - TikTok for Business 官方廣告學習中心：[廣告素材疲勞說明](https://ads.tiktok.com/help/article/creative-fatigue)（創意疲勞的官方定義與 TikTok 平台的偵測機制）
 - WordStream：[廣告素材疲勞判斷與換素材時機](https://www.wordstream.com/blog/ws/2022/09/27/tiktok-ads-benchmarks)（跨平台素材生命週期基準與換素材頻率建議）
 
+## 延伸閱讀
+
+- [從後台數字判斷：換素材還是換受眾？診斷決策樹]({{< relref "posts/material-analysis/audience-vs-creative-diagnosis" >}})
+- [高點擊低轉換：廣告素材沒問題但就是不買，原因在哪裡]({{< relref "posts/material-analysis/high-ctr-low-conversion" >}})
+
 ---
 
 ## 常見問題

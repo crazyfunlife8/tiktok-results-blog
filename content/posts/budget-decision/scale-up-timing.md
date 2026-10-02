@@ -92,6 +92,11 @@ TikTok 廣告學習期通常需要 7–14 天（達到 50 個轉換事件或系�
 - TikTok for Business 官方說明：[廣告預算與出價說明](https://ads.tiktok.com/help/article/budget-and-bid)（TikTok 廣告每日預算 vs 總預算的差異，以及出價策略對花費速度的影響）
 - WordStream：[廣告擴量最佳實務](https://www.wordstream.com/blog/ws/2023/08/scaling-ads)（跨平台廣告擴量策略，階梯式調預算與複製廣告組的比較分析）
 
+## 延伸閱讀
+
+- [同時跑三個廣告組，預算要怎麼分？小預算資源配置邏輯]({{< relref "posts/budget-decision/multi-adset-budget-allocation" >}})
+- [廣告一直在跑但花不完預算怎麼辦？TikTok 廣告限制因素診斷]({{< relref "posts/budget-decision/budget-underspend-diagnosis" >}})
+
 ---
 
 ## 常見問題

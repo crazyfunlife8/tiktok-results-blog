@@ -93,6 +93,11 @@ CPM 診斷的核心邏輯是：**CPM 本身不告訴你問題在哪，它要和�
 - TikTok for Business 官方廣告學習中心：[廣告競價與成效指標說明](https://ads.tiktok.com/help/article/tiktok-ads-auction-and-delivery)（CPM 計算機制與競價邏輯官方說明）
 - WordStream 廣告效果基準報告：[TikTok 廣告成效基準](https://www.wordstream.com/blog/ws/2022/09/27/tiktok-ads-benchmarks)（CPM / CTR / CVR 跨平台對照參考）
 
+## 延伸閱讀
+
+- [CPC 突然暴漲是怎麼回事？廣告點擊成本飆升的三個真因]({{< relref "posts/data-diagnosis/cpc-spike-diagnosis" >}})
+- [TikTok 廣告 CTR 多少算好？台灣市場點擊率診斷指南]({{< relref "posts/data-diagnosis/ctr-diagnosis-guide" >}})
+
 ---
 
 ## 常見問題

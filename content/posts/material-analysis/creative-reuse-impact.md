@@ -77,6 +77,11 @@ readtime: 6
 - TikTok for Business 官方說明：[廣告組受眾重疊工具](https://ads.tiktok.com/help/article/audience-overlap)（如何使用後台工具確認廣告組之間的受眾重疊狀況）
 - WordStream：[廣告帳戶結構與廣告組互搶問題](https://www.wordstream.com/blog/ws/2023/03/ad-account-structure)（廣告帳戶分層架構建議，防止內部競標搶量）
 
+## 延伸閱讀
+
+- [同時跑三個廣告組，預算要怎麼分？小預算資源配置邏輯]({{< relref "posts/budget-decision/multi-adset-budget-allocation" >}})
+- [創意疲勞怎麼判斷？TikTok 廣告素材什麼時候該換了]({{< relref "posts/material-analysis/creative-fatigue-guide" >}})
+
 ---
 
 ## 常見問題

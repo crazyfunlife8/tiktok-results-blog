@@ -10,6 +10,10 @@ author: "跳動e成效"
 readtime: 5
 ---
 
+在台灣電商廣告裡，**ROAS 的及格線不是看「感覺不錯」，而是從毛利率反推出損益平衡點，低於這個點就是虧損，不管數字看起來多好看**——這是所有廣告預算決策的起點，沒算清楚這個數字，任何「提升 ROAS」的努力方向都可能偏掉。
+
+<!-- IG-data -->
+
 ## 為什麼 ROAS 1.2 在台灣大多數是虧損
 
 ROAS（Return on Ad Spend）是廣告花費的回報倍數。ROAS 1.2 代表每花 NT$1,000 廣告費，你拿回 NT$1,200 的營收。聽起來有賺，但你還沒算毛利。
@@ -48,3 +52,8 @@ ROAS 低但毛利率高的品類（如保養品），損益平衡線比你想的
 **延伸閱讀（外部資源）：**
 - TikTok for Business 官方廣告指標說明：[廣告投資回報率計算方式](https://ads.tiktok.com/help/article/ad-metrics)（ROAS 定義與計算公式官方版本）
 - WordStream：[TikTok 廣告成效基準報告](https://www.wordstream.com/blog/ws/2022/09/27/tiktok-ads-benchmarks)（各品類 ROAS / CTR / CVR 跨平台對照參考）
+
+## 延伸閱讀
+
+- [NT$900/天廣告跑三天：停、繼續還是調整的判斷框架]({{< relref "posts/budget-decision/three-day-budget-framework" >}})
+- [ROAS、CTR、CPC 同時難看怎麼辦？多指標交叉診斷框架]({{< relref "posts/data-diagnosis/multi-metric-diagnosis" >}})

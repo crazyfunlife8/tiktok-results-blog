@@ -79,6 +79,11 @@ TikTok 用戶幾乎全部從手機看廣告。廣告點擊進去的落地頁如�
 - Nielsen Norman Group：[電商轉換率影響因子研究](https://www.nngroup.com/articles/ecommerce-ux/)（落地頁 UX 和摩擦點對轉換率的影響、基於用戶行為研究）
 - Baymard Institute：[購物車放棄率研究](https://baymard.com/lists/cart-abandonment-rate)（全球電商結帳流程放棄率統計與常見原因分析）
 
+## 延伸閱讀
+
+- [從後台數字判斷：換素材還是換受眾？診斷決策樹]({{< relref "posts/material-analysis/audience-vs-creative-diagnosis" >}})
+- [ROAS 基準對照：台灣微型電商廣告成效的起點]({{< relref "posts/data-diagnosis/roas-baseline" >}})
+
 ---
 
 ## 常見問題

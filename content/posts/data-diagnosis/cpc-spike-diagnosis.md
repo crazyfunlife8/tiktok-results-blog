@@ -69,6 +69,11 @@ CPC 暴漲的根因幾乎總是從這三個方向來的，找到是哪一個，�
 - TikTok for Business 官方廣告學習中心：[廣告出價策略說明](https://ads.tiktok.com/help/article/bidding-strategies)（最低成本 / 目標成本 / 出價上限的官方定義與適用情境）
 - WordStream：[廣告 CPC 行業基準報告](https://www.wordstream.com/blog/ws/2016/02/29/google-adwords-industry-benchmarks)（跨平台 CPC 正常範圍對照，適合比較不同品類的成本基準）
 
+## 延伸閱讀
+
+- [CPM 爆高還是偏低？TikTok 廣告曝光成本診斷三步法]({{< relref "posts/data-diagnosis/cpm-diagnosis-guide" >}})
+- [ROAS、CTR、CPC 同時難看怎麼辦？多指標交叉診斷框架]({{< relref "posts/data-diagnosis/multi-metric-diagnosis" >}})
+
 ---
 
 ## 常見問題

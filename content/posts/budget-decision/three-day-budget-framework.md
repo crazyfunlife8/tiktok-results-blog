@@ -10,6 +10,8 @@ author: "跳動e成效"
 readtime: 5
 ---
 
+<!-- IG-firsthand -->
+
 ## 三天數據才有意義
 
 TikTok 廣告系統需要 2–3 天的學習期才會穩定投放。第一天的數據通常 CPM 偏高、CTR 偏低，不能作為判斷依據。（資料來源：TikTok Business 廣告官方說明 2026）
@@ -17,6 +19,8 @@ TikTok 廣告系統需要 2–3 天的學習期才會穩定投放。第一天的
 三天後再看整體 ROAS、CTR、加購率，才是有效數據。
 
 ## 三天後的判斷框架
+
+三個條件的分類邏輯是：先看廣告漏斗最前端的 CTR 訊號，再看最後端的 ROAS，再判斷資料量是否足夠做決定——這個順序可以避免「看到沒轉單就全部停掉」的常見誤操作。
 
 **條件一：停廣告**
 - ROAS < 損益平衡 ROAS 的 50%
@@ -52,3 +56,8 @@ NT$900/天 × 7 天 這個數字不是拍腦袋定出來的，是從學習期邏
 **延伸閱讀（外部資源）：**
 - TikTok for Business 官方說明：[廣告學習期與最適化事件說明](https://ads.tiktok.com/help/article/learning-phase)（TikTok 廣告系統學習期機制、50 個最適化事件的官方說明與常見 Q&A）
 - WordStream：[小預算 PPC 廣告操作指南](https://www.wordstream.com/blog/ws/2023/09/small-budget-ppc)（跨平台小預算廣告測試週期設計與成效判斷邏輯，含停 / 繼續 / 調整決策框架）
+
+## 延伸閱讀
+
+- [TikTok 廣告學習期是什麼？台灣小商家需要跑幾天才有數據]({{< relref "posts/budget-decision/learning-phase-guide" >}})
+- [ROAS 基準對照：台灣微型電商廣告成效的起點]({{< relref "posts/data-diagnosis/roas-baseline" >}})

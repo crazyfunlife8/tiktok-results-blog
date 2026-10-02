@@ -85,6 +85,11 @@ TikTok 官方的學習期結束條件是 **50 個最適化事件**（依你的�
 - TikTok for Business 官方廣告學習中心：[廣告學習期官方說明](https://ads.tiktok.com/help/article/smart-campaign-setup)（學習期機制、最適化事件收集標準官方版本）
 - WordStream：[TikTok 廣告投放初學者指南](https://www.wordstream.com/blog/ws/2022/09/27/tiktok-ads-benchmarks)（包含學習期管理與廣告成效基準對照參考）
 
+## 延伸閱讀
+
+- [NT$900/天廣告跑三天：停、繼續還是調整的判斷框架]({{< relref "posts/budget-decision/three-day-budget-framework" >}})
+- [同時跑三個廣告組，預算要怎麼分？小預算資源配置邏輯]({{< relref "posts/budget-decision/multi-adset-budget-allocation" >}})
+
 ---
 
 ## 常見問題

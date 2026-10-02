@@ -115,6 +115,11 @@ CPV 主要用於影片觀看目標（而非轉換目標）的廣告。台灣市�
 - TikTok for Business 廣告指標官方說明：[廣告指標定義文件](https://ads.tiktok.com/help/article/ad-metrics)（CPM / CTR / CVR / ROAS 定義與計算公式官方版本）
 - Hanapin Marketing：[PPC 成效指標診斷指南](https://www.hanapinmarketing.com/hanapin-blog/a-ppc-glossary-common-paid-search-terms-their-definitions)（CTR / CVR / CPA 跨平台對照參考）
 
+## 延伸閱讀
+
+- [ROAS 基準對照：台灣微型電商廣告成效的起點]({{< relref "posts/data-diagnosis/roas-baseline" >}})
+- [ROAS、CTR、CPC 同時難看怎麼辦？多指標交叉診斷框架]({{< relref "posts/data-diagnosis/multi-metric-diagnosis" >}})
+
 ---
 
 ## 常見問題

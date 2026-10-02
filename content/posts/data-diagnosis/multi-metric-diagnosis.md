@@ -96,6 +96,11 @@ CPC 偏高有時候是因為廣告集中在高競爭時段（例如晚間 8–11
 - TikTok for Business 官方廣告學習中心：[廣告指標說明文件](https://ads.tiktok.com/help/article/ad-metrics)（CPM / CTR / CPC / ROAS 定義與計算公式官方版本）
 - WordStream：[Google Ads 廣告效果基準報告](https://www.wordstream.com/blog/ws/2016/02/29/google-adwords-industry-benchmarks)（跨平台多指標基準值參考，比較不同行業的 CTR / CPC 正常範圍）
 
+## 延伸閱讀
+
+- [高點擊低轉換：廣告素材沒問題但就是不買，原因在哪裡]({{< relref "posts/material-analysis/high-ctr-low-conversion" >}})
+- [報表看不懂怎麼辦？TikTok 廣告後台七個數字白話解讀]({{< relref "posts/data-diagnosis/report-seven-metrics-guide" >}})
+
 ---
 
 ## 常見問題

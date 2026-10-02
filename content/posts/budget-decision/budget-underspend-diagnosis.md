@@ -84,6 +84,11 @@ TikTok 系統每天都在競標廣告曝光機會，有多少受眾就有多少�
 - TikTok for Business 官方說明：[廣告投放量低的常見原因](https://ads.tiktok.com/help/article/low-ad-delivery)（TikTok 官方列出的廣告投放量不足排查清單，包含預算、出價、素材審核等因素）
 - WordStream：[廣告預算花不完的原因與解法](https://www.wordstream.com/blog/ws/2023/02/ad-spend-low)（跨平台廣告預算花不完的系統性排查框架，多數邏輯適用於 TikTok）
 
+## 延伸閱讀
+
+- [廣告跑得還不錯，什麼時候該擴量？判斷擴量時機的三個信號]({{< relref "posts/budget-decision/scale-up-timing" >}})
+- [TikTok 廣告學習期是什麼？台灣小商家需要跑幾天才有數據]({{< relref "posts/budget-decision/learning-phase-guide" >}})
+
 ---
 
 ## 常見問題
