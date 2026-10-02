@@ -4,6 +4,7 @@ title = "跳動e成效 — TikTok廣告成效診斷"
 theme = "tiktok-analytics"
 hasCJKLanguage = true
 enableGitInfo = false
+enableRobotsTXT = true
 defaultContentLanguage = "zh-tw"
 summaryLength = 70
 

@@ -55,8 +55,12 @@ h3{font-size:1.125rem}
 {{ $desc := .Description | default .Site.Params.description }}
 <meta name="description" content="{{ $desc }}">
 
-{{/* ── Robots ── */}}
+{{/* ── Robots: noindex section/taxonomy/term list pages ── */}}
+{{ if or (eq .Kind "section") (eq .Kind "taxonomy") (eq .Kind "term") }}
+<meta name="robots" content="noindex, follow">
+{{ else }}
 <meta name="robots" content="index, follow">
+{{ end }}
 
 {{/* ── Canonical ── */}}
 <link rel="canonical" href="{{ .Permalink }}">
